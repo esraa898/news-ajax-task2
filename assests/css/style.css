@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style:none ;
+}
+body{
+     font-family: poppins;
+ 
+}
+.container{
+    width: 85%;
+    margin: auto;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+}
+nav {
+ background-color: rgb(119, 202, 223);
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 20px 98px;
+ position: fixed;
+ width: 100%;
+ top: 0;
+ z-index: 1;
+
+}
+nav .logo{
+    font-weight: 600;
+    font-size: 37px;
+    color: wheat;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+}
+nav .listitem{
+ display: flex;
+justify-content: space-between;
+align-items: center;
+flex-flow:row wrap;
+
+
+
+}
+nav .linkitem{
+font-weight: 600;
+font-size: 20px;
+margin-left: 20px;
+color: wheat;
+}
+
+nav #icon-nav , nav #close{
+    display: none;
+   
+}
+
+
+
+.grid-item{
+  margin: 130px 0;
+}
+.grid-item .item{
+width: 32%;
+}
+.grid-item .item img{
+    width: 100%;
+}
+.search{
+
+}
+.search #search-text{
+        outline: none;
+        padding: 7px 20px;
+        border: 1px solid rgb(119, 202, 223);
+        background-color: wheat;
+}
+.search #search-icon{
+    color: wheat;
+    font-size: 25px;
+}
+.name{
+    color:tomato;
+}
+.item h1 {
+    line-height: 3.5;
+    font-size: 24px;
+    text-transform: capitalize;
+    text-align: center;
+}
+.item h2 {
+    font-size: 20px;
+    font-weight: 400px;
+    line-height: 1.7;
+}
+.item p{
+         line-height: 1.8;
+    font-size: 18px;
+    font-weight: 300px;
+    color: rgb(128, 125, 125);
+}
+@media (max-width:991px) {
+    nav #icon-nav, nav #close{
+        display: block;
+    }
+    nav #close{
+        position: absolute;
+        top: 40px;
+        right: 40px ;
+        font-size: 40px;
+        color: wheat;
+    }
+    nav #icon-nav i {
+        color: wheat;
+        font-size: 30px;
+    }
+    nav .listitem{
+        display: block;
+        position: absolute;
+        width:100%;
+        left:0;
+        top: -316px;
+        padding:30px 20px;
+        background-color: rgb(119, 202, 223);}
+        nav .linkitem{
+            display: inline-block;
+            margin-bottom: 38px;
+        }
+    .logo{
+        order:1;
+    }
+    .list-item{
+        order:4;
+    }
+    .search{
+        order:2;
+    }
+    #icon-nav{
+        order:4;
+    }
+    .grid-item .item {
+        width: 45%;
+        
+    }
+    
+    
+     
+}
